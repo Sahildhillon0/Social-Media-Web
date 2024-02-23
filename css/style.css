@@ -17,6 +17,8 @@
     --search-padding:0.6rem 1rem;
     --card-padding:1rem;
 
+    --sticky-top-left:5.4rem;
+    --sticky-top-right:-18rem;
 }
 *,*::before,*::after{
     margin: 0;
@@ -119,4 +121,143 @@ nav .create{
     display: flex;
     align-items: center;
     gap:2rem;
+}
+
+main{
+    position: absolute;
+    top: 5.4rem;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 22vh auto 20vw;
+    position: relative;
+    column-gap: 2rem;
+}
+
+main .container .left{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-left);
+}
+
+main .container .left .profile{
+    padding: var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    width: 100%;
+}
+
+.left .sidebar{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+}
+
+.left .sidebar .menu-item{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative;
+}
+
+.left .sidebar .menu-item:hover{
+    background: var(--color-light);
+}
+
+.left .sidebar i{
+    font-size: 1.4rem;
+    margin-left: 1.22rem;
+    color:var(--color-gray);
+    position: relative;
+}
+
+.left .sidebar i .notification-count{
+    background: var(--color-danger);
+    color: white;
+    font-size: 0.7rem;
+    width: fit-content;
+    border-radius: 0.8rem;
+    padding: 0.1rem 0.4rem;
+    position: absolute;
+    top: -0.2rem;
+    right: -0.3rem;
+}
+
+.left .sidebar h3{
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: var(--color-black);
+}
+
+.left .sidebar .active{
+    background-color: var(--color-light);
+}
+
+.left .sidebar .active i,.left .sidebar .active h3{
+    color:var(--color-primary);
+}
+
+.left .sidebar .active::before{
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 100%;
+    position: absolute;
+    background-color: var(--color-primary);
+}
+
+.left .sidebar .menu-item:first-child.active{
+    border-top-left-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+.left .sidebar .menu-item:last-child.active{
+    border-bottom-left-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+
+.left .btn{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.left .notification-popup{
+    position: absolute;
+    top: 0;
+    left: 110%;
+    width: 30rem;
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-border-radius);
+    box-shadow: 0 0 2rem hsl(--color-primary,75%, 60% 25%);
+    display: none;
+}
+
+.left .notification-popup::before{
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    background: var(--color-white);
+    position: absolute;
+    left:-0.6rem;
+    transform: rotate(45deg);
+}
+
+.left .notification-popup > div{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.left .notification-popup small{
+    display: block;
 }
