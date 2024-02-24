@@ -398,3 +398,22 @@ form.sign-in-form {
     left: 50%;
   }
 }
+
+.sign-in-form a{
+  color: black;
+
+}
+
+.sign-in-form a:hover{
+  color: #4481eb;
+}
+
+
+.sign-up-form a{
+  color: black;
+
+}
+
+.sign-up-form a:hover{
+  color: #4481eb;
+}
