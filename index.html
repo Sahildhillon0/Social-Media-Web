@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Memoir</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <nav>
+<body id="body">
+    <nav id="navbar" onclick="">
         <div class="container">
-            <h2 class="log">
-                nokoSocial
+            <h2 class="log" id="logo">
+                Memoir
             </h2>
             <div class="search-bar">
                 <i class="uil uil-search"></i>
@@ -20,7 +20,9 @@
             <div class="create">
                 <label for="create-post" class="btn btn-primary">Create</label>
                 <div class="profile-picture">
-                    <img src="./images/profile.png" alt="profile-picture">
+                    <a href="./html/login_page.html">
+                        <img src="./images/profile.png" alt="profile-picture">
+                    </a>
                 </div>
             </div>
         </div>
@@ -42,13 +44,13 @@
                 </a>
 
                 <div class="sidebar">
-                    <a href="" class="menu-item active">
+                    <a class="menu-item active">
                         <span><i class="uil uil-home"></i></span><h3>Home</h3>
                     </a>
-                    <a href="" class="menu-item">
+                    <a class="menu-item">
                         <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
                     </a>
-                    <a href="" class="menu-item" id="notifications">
+                    <a class="menu-item" id="notifications">
                         <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notification</h3>
 
                         <div class="notification-popup">
@@ -99,16 +101,16 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="menu-item" id="messages-notifications">
+                    <a class="menu-item" id="messages-notifications">
                         <span><i class="uil uil-envelope"><small class="notification-count">6</small></i></span><h3>Messages</h3>
                     </a>
-                    <a href="" class="menu-item">
+                    <a class="menu-item">
                         <span><i class="uil uil-bookmark"></i></span><h3>BookMarks</h3>
                     </a>
-                    <a href="" class="menu-item">
+                    <a class="menu-item" id="Theme">
                         <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
                     </a>
-                    <a href="" class="menu-item">
+                    <a class="menu-item">
                         <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
                     </a>
                     </div>
@@ -455,5 +457,7 @@
             </div>
         </div>
     </main>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
