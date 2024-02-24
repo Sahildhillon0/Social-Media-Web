@@ -98,13 +98,13 @@ nav .container{
     justify-content: space-between;
 }
 
-nav .search-box{
+.search-bar{
     background: var(--color-light);
     border-radius: var(--border-radius);
     padding: var(--btn-padding);
 }
 
-nav .search-box input[type="search"] {
+.search-bar input[type="search"] {
     background:transparent;
     width: 30vw;
     margin-left: 1rem;
@@ -113,7 +113,7 @@ nav .search-box input[type="search"] {
 
 }
 
-nav .search-box input[type="search"]::placeholder{
+.search-bar input[type="search"]::placeholder{
     color: var(--color-gray);
 }
 
@@ -401,4 +401,130 @@ main .container .left .profile{
 
 .middle .liked-by p{
     margin-left: 0.5rem;
+}
+
+.main .container .right{
+    height: max-content;
+    position: sticky;
+    top:var(--sticky-top-right);
+    bottom: 0;
+}
+
+.right .messages{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.right .messages .heading{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right .messages{
+    font-size: 1.4rem;
+}
+
+.right .messages .search-bar{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.right .messages .categories{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right .messages .categories h6{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid var(--color-light);
+    font-size: 0.85rem;
+}
+
+.right .messages .categories .active{
+    border-bottom: 4px solid var(--color-dark);
+}
+
+.right .messages .message{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: start;
+}
+
+.right .messages .message:last-child{
+    margin: 0;
+}
+
+.right .messages .message p{
+    font-size: 0.85rem;
+}
+
+.right .messages .message-requests{
+    color:var(--color-primary);
+}
+
+.right .friend-requests{
+    margin-top: 1rem;
+}
+
+.right .friend-requests h4{
+    color: var(--color-gray);
+    margin: 1rem 0;
+}
+
+.right .request{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 0.7rem;
+}
+
+.right .request .info{
+    /* display: flex; */
+    gap:1rem;
+    margin-bottom: 0.2rem;
+    padding-top: 0.2rem ;
+}
+
+.right .boton{
+    display: flex;
+    gap: 1rem;
+}
+
+.boxi{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+
+@media screen and (max-width:1200px) {
+    .container{
+        width: 96%;
+    }
+
+    main .container{
+        grid-template-columns: 5rem auto 30vw;
+        gap:1rem;
+    }
+
+    .left{
+        width: 5rem;
+        z-index: 5;
+    }
+
+    main .container .left .profile{
+        display: none;
+    }
+
+    .sidebar h3{
+        display: none;
+    }
 }
