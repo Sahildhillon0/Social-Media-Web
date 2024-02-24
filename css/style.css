@@ -130,7 +130,7 @@ main{
 
 main .container{
     display: grid;
-    grid-template-columns: 22vh auto 20vw;
+    grid-template-columns: 25vh auto 20vw;
     position: relative;
     column-gap: 2rem;
 }
@@ -294,6 +294,15 @@ main .container .left .profile{
     position: absolute;
     bottom: 0;
 }
+.middle .stories .story:hover{
+    /* border: 2px solid white; */
+    scale: 1.1;
+    transition-duration: 250ms;
+    cursor: pointer;
+}
+.middle .stories .story:not(:hover){
+    transition-duration: 250ms;
+}
 
 .middle .stories .story .name{
     z-index: 2;
@@ -436,6 +445,7 @@ main .container .left .profile{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .right .messages .categories h6{
@@ -448,6 +458,10 @@ main .container .left .profile{
 
 .right .messages .categories .active{
     border-bottom: 4px solid var(--color-dark);
+}
+
+.right .messages .categories .active1{
+    border-bottom: 4px solid var(--color-primary);
 }
 
 .right .messages .message{

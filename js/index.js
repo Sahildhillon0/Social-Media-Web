@@ -89,3 +89,126 @@ function theme() {
         darkTheme = false;
     }
 }
+
+function explore23(){
+    document.getElementById(`stories`).style.display=`none`;
+    document.getElementById(`input`).style.display=`none`;
+}
+function home(){
+    document.getElementById(`stories`).style.display=``;
+    document.getElementById(`input`).style.display=``;
+}
+
+function settings(){
+    const set=document.querySelector(`.middle`);
+    alert("Sorry! currently working on it.")
+}
+
+
+function primary() {
+    document.querySelector(`#general`).classList.remove(`active`);
+    document.querySelector(`#request`).classList.remove(`active1`);
+    document.querySelector(`#primary`).classList.add(`active`);
+    document.getElementById(`msgs`).innerHTML = `<div class="message">
+    <div class="profile-picture">
+        <img src="./images/bmw.jpg" alt="">
+    </div>
+    <div class="message-body">
+        <h5>Mikey-Kun</h5>
+        <p class="text-bold">Sup! homie</p>
+    </div>
+</div>
+<div class="message">
+    <div class="profile-picture">
+        <img src="./images/bmw.jpg" alt="">
+    </div>
+    <div class="message-body">
+        <h5>Liza</h5>
+        <p class="text-bold">hi!</p>
+    </div>
+</div>
+<div class="message">
+    <div class="profile-picture">
+        <img src="./images/bmw.jpg" alt="">
+    </div>
+    <div class="message-body">
+        <h5>Albert</h5>
+        <p class="text-bold">Will be soon</p>
+    </div>
+</div>
+<div class="message">
+    <div class="profile-picture">
+        <img src="./images/bmw.jpg" alt="">
+    </div>
+    <div class="message-bold">
+        <h5>Sherlock</h5>
+        <p class="text-muted">lmao!</p>
+    </div>
+</div>
+<div class="message">
+    <div class="profile-picture">
+        <img src="./images/bmw.jpg" alt="">
+    </div>
+    <div class="message-body">
+        <h5>Stephen-Hawkins</h5>
+        <p class="text-bold">You'll handle Island</p>
+    </div>
+</div>
+<div class="message">
+    <div class="profile-picture">
+        <img src="./images/bmw.jpg" alt="">
+    </div>
+    <div class="message-body">
+        <h5>Shashank</h5>
+        <p class="text-muted">Sup! homie</p>
+    </div>
+</div>`
+}
+function requests() {
+    document.querySelector(`#primary`).classList.remove(`active`);
+    document.querySelector(`#general`).classList.remove(`active`);
+    document.querySelector(`#request`).classList.add(`active1`);
+    document.getElementById(`msgs`).innerHTML = `<div class="message">
+    <div class="profile-picture">
+        <img src="./images/bmw.jpg" alt="">
+    </div>
+    <div class="message-body">
+        <h5>Stephen-Hawkins</h5>
+        <p class="text-bold">You'll handle Island</p>
+    </div>
+</div>
+<div class="message">
+    <div class="profile-picture">
+        <img src="./images/bmw.jpg" alt="">
+    </div>
+    <div class="message-body">
+        <h5>Shashank</h5>
+        <p class="text-muted">Sup! homie</p>
+    </div>
+</div>`
+}
+
+function general() {
+    document.getElementById(`msgs`).innerHTML = `<div class="message">
+    <div class="profile-picture">
+        <img src="./images/bmw.jpg" alt="">
+    </div>
+    <div class="message-body">
+        <h5>Mikey-Kun</h5>
+        <p class="text-bold">Sup! homie</p>
+    </div>
+</div>
+<div class="message">
+    <div class="profile-picture">
+        <img src="./images/bmw.jpg" alt="">
+    </div>
+    <div class="message-body">
+        <h5>Liza</h5>
+        <p class="text-bold">hi!</p>
+    </div>
+</div>`;
+    document.querySelector(`#primary`).classList.remove(`active`);
+    document.querySelector(`#request`).classList.remove(`active1`);
+    document.querySelector(`#general`).classList.add(`active`);
+
+}
