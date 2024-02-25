@@ -16,19 +16,20 @@
       <div class="forms-container">
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
-            <a href="../html/login_page.html">
+            <a href="../index.html">
               <h1><i class="uil uil-estate"></i></h1>
             </a>
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" id="Username"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" id="Password"/>
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <span id="process" class="error"></span>
+            <input type="submit" value="Login" class="btn solid" id="Login" onclick="login()"/>
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -52,17 +53,18 @@
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" id="rs-username"/>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" id="rs-email"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" id="rs-password"/>
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <span id="rs-dialogue" class="error"></span>
+            <input type="submit" class="btn" value="Sign up" onclick="signup()"/>
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">

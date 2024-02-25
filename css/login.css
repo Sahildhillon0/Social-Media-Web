@@ -417,3 +417,11 @@ form.sign-in-form {
 .sign-up-form a:hover{
   color: #4481eb;
 }
+
+.error{
+  color: red;
+}
+
+.success{
+  color: lightgreen;
+}

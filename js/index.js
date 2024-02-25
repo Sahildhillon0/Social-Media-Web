@@ -212,3 +212,24 @@ function general() {
     document.querySelector(`#general`).classList.add(`active`);
 
 }
+
+function liked1(){
+    document.getElementById(`liked1`).style.color=`red`;
+}
+function liked2(){
+    document.getElementById(`liked2`).style.color=`red`;
+}
+function liked3(){
+    document.getElementById(`liked3`).style.color=`red`;
+}
+function liked4(){
+    document.getElementById(`liked4`).style.color=`red`;
+}
+
+function post(){
+    const con=document.getElementById(`create-post`).value;
+    console.log(con);
+    document.getElementById(`content`).innerHTML=`<h2>${con}</h2>`;
+    document.getElementById(`main-content`).style.display=`block`;
+    document.getElementById(`content`).classList.add(`main-content`);
+}

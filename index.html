@@ -162,10 +162,49 @@
                         <img src="./images/profile.png" alt="">
                     </div>
                     <input type="text" placeholder="What's on your mind?" id="create-post">
-                    <input type="submit" value="Post" class="btn btn-primary">
+                    <input type="button" value="Post" class="btn btn-primary" onclick="post()">
                 </form>
 
                 <div class="feeds">
+                    <div class="feed" id="main-content">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/profile.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Faith</h3>
+                                    <small>India, 5 min ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+                        <div class="photo" id="content">
+                            <!-- <img src="./images/Screenshot 2023-12-25 214137.png" alt=""> -->
+                        </div>
+                        <div class="action-button">
+                            <div class="interactive-button">
+                                <span id="liked1" onclick="liked1()"><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span>
+                                <img src="./images/Screenshot 2023-12-25 214137.png" alt="">
+                                <img src="./images/profile.png" alt="">
+                                <img src="./images/profile.png" alt="">
+                            </span>
+                            <p>liked by <b>Free</b> and <b>2 others</b>.</p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Free</b> Stay hard <span class="hash-tag">#sigma</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 3 comments</div>
+                    </div>
                     <div class="feed">
                         <div class="head">
                             <div class="user">
@@ -184,7 +223,7 @@
                         </div>
                         <div class="action-button">
                             <div class="interactive-button">
-                                <span><i class="uil uil-heart"></i></span>
+                                <span id="liked4" onclick="liked4()"><i class="uil uil-heart"></i></span>
                                 <span><i class="uil uil-comment-dots"></i></span>
                                 <span><i class="uil uil-share-alt"></i></span>
                             </div>
@@ -223,7 +262,7 @@
                         </div>
                         <div class="action-button">
                             <div class="interactive-button">
-                                <span><i class="uil uil-heart"></i></span>
+                                <span id="liked2" onclick="liked2()"><i class="uil uil-heart"></i></span>
                                 <span><i class="uil uil-comment-dots"></i></span>
                                 <span><i class="uil uil-share-alt"></i></span>
                             </div>
@@ -263,7 +302,7 @@
                         </div>
                         <div class="action-button">
                             <div class="interactive-button">
-                                <span><i class="uil uil-heart"></i></span>
+                                <span id="liked3" onclick="liked3()"><i class="uil uil-heart"></i></span>
                                 <span><i class="uil uil-comment-dots"></i></span>
                                 <span><i class="uil uil-share-alt"></i></span>
                             </div>

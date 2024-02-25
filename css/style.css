@@ -589,3 +589,27 @@ main .container .left .profile{
         display: none;
     }
 }
+
+#liked1{
+    cursor: pointer;
+}
+#liked2{
+    cursor: pointer;
+}
+#liked3{
+    cursor: pointer;
+}
+#liked4{
+    cursor: pointer;
+}
+
+#main-content{
+    display: none;
+}
+
+.main-content{
+    border-top: 1px solid var(--color-gray);
+    border-bottom: 1px solid var(--color-gray);
+
+    padding-left: 1rem;
+}
