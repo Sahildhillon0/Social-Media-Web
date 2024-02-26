@@ -22,6 +22,7 @@ function login() {
   } else {
     dialogue.innerHTML = 'Login Success.';
     dialogue.classList.add('success');
+    document.getElementById(`proceed`).style.display=`block`;
   }
   return false;
 }

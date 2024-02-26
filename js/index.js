@@ -328,3 +328,28 @@ function post(){
     document.getElementById(`main-content`).style.display=`block`;
     document.getElementById(`content`).classList.add(`main-content`);
 }
+
+function accept1(){
+    document.getElementById(`request1`).style.display=`none`;
+}
+function accept2(){
+    document.getElementById(`request2`).style.display=`none`;
+}
+function accept3(){
+    document.getElementById(`request3`).style.display=`none`;
+}
+function accept4(){
+    document.getElementById(`request4`).style.display=`none`;
+}
+function reject1(){
+    document.getElementById(`request1`).style.display=`none`;
+}
+function reject2(){
+    document.getElementById(`request2`).style.display=`none`;
+}
+function reject3(){
+    document.getElementById(`request3`).style.display=`none`;
+}
+function reject4(){
+    document.getElementById(`request4`).style.display=`none`;
+}
