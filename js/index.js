@@ -12,9 +12,8 @@ const changeActiveItems = () => {
         item.classList.remove(`active`);
     })
 }
-
+x=false;
 menuItems.forEach(item => {
-    x=false;
     item.addEventListener(`click`, () => {
         changeActiveItems();
         item.classList.add(`active`);
@@ -25,31 +24,27 @@ menuItems.forEach(item => {
             // document.querySelector(`.feed`).style.background=`#525252`;
         }
 
-        if(!x){
-            // console.log(`he`)
-            if (item.id != `notifications`) {
-                let popup = document.querySelector(`.notification-popup`);
-                popup.style.display = `none`;
-            }
-            else {
-                let popup = document.querySelector(`.notification-popup`);
-                popup.style.display = `block`;
-                document.querySelector(`#notifications .notification-count`).style.display = `none`;
-            }
-            x=true;
+
+        
+        if (item.id != `notifications`) {
+            let popup = document.querySelector(`.notification-popup`);
+            popup.style.display = `none`;
         }
-        else{
-            // console.log(`eh`);
-            if (item.id != `notifications`) {
-                let popup = document.querySelector(`.notification-popup`);
-                popup.style.display = `block`;
-                document.querySelector(`#notifications .notification-count`).style.display = `none`;
+        else {
+            if(!x){
+                console.log(`he`);
+            let popup = document.querySelector(`.notification-popup`);
+            popup.style.display = `block`;
+            document.querySelector(`#notifications .notification-count`).style.display = `none`;
+            x=true;
             }
-            else {
-                let popup = document.querySelector(`.notification-popup`);
-                popup.style.display = `none`;
-            }
+            else{
+                console.log(`eh`);
+                let popup = document.getElementById(`popup`);
+            popup.style.display = `none`;
             x=false;
+            }
+            
         }
 
     })
@@ -90,18 +85,6 @@ messageNotification.addEventListener(`click`, () => {
     }, 2000);
 
 })
-
-
-let notifications = false;
-if(!notifications){
-    console.log(`hehehehehe`);
-    notifications=true;
-}
-else{
-    
-    notifications=false;
-}
-
 
 let darkTheme = false;
 
