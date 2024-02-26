@@ -197,6 +197,7 @@ main .container .left .profile{
 
 .left .sidebar .active{
     background-color: var(--color-light);
+    /* color: #1c1d27; */
 }
 
 .left .sidebar .active i,.left .sidebar .active h3{

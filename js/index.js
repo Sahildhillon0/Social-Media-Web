@@ -78,14 +78,79 @@ let darkTheme = false;
 
 function theme() {
     if (!darkTheme) {
-        document.body.style.background = `#222831`;
+        document.body.style.background = `#181a1e`;
+        document.body.style.color=`white`;
         document.getElementById(`logo`).style.color = `white`;
-        document.getElementById(`navbar`).style.background = `#393E46`;
+        document.getElementById(`navbar`).style.background = `#1c1d27`;
+        document.getElementById(`profile`).style.background = `#1c1d27`;
+        document.getElementById(`sidebar`).style.background = `#1c1d27`;
+        document.getElementById(`right`).style.background = `#1c1d27`;
+        document.getElementById(`searchbar`).style.background = `rgb(36 38 43)`;
+        document.getElementById(`searchbar1`).style.background = `rgb(36 38 43)`;
+        document.getElementById(`input`).style.background = `rgb(36 38 43)`;
+        document.getElementById(`popup`).style.background = `#1c1d27`;
+        document.getElementById(`feed2`).style.background = `#1c1d27`;
+        document.getElementById(`feed3`).style.background = `#1c1d27`;
+        document.getElementById(`feed4`).style.background = `#1c1d27`;
+        document.getElementById(`feed5`).style.background = `#1c1d27`;
+        document.getElementById(`feed6`).style.background = `#1c1d27`;
+        document.getElementById(`feed7`).style.background = `#1c1d27`;
+        document.getElementById(`feed8`).style.background = `#1c1d27`;
+        document.getElementById(`feed9`).style.background = `#1c1d27`;
+        document.getElementById(`feed10`).style.background = `#1c1d27`;
+        document.getElementById(`feed11`).style.background = `#1c1d27`;
+        document.getElementById(`feed12`).style.background = `#1c1d27`;
+        document.getElementById(`feed13`).style.background = `#1c1d27`;
+        document.getElementById(`feed14`).style.background = `#1c1d27`;
+        document.getElementById(`request1`).style.background = `#1c1d27`;
+        document.getElementById(`request2`).style.background = `#1c1d27`;
+        document.getElementById(`request3`).style.background = `#1c1d27`;
+        document.getElementById(`request4`).style.background = `#1c1d27`;
+        document.getElementById(`tag1`).style.color = `#ffffff`;
+        document.getElementById(`tag2`).style.color = `#ffffff`;
+        document.getElementById(`tag3`).style.color = `#ffffff`;
+        document.getElementById(`tag4`).style.color = `#ffffff`;
+        document.getElementById(`tag5`).style.color = `#ffffff`;
+        document.getElementById(`tag6`).style.color = `#ffffff`;
+        document.getElementById(`tag7`).style.color = `#ffffff`;
+
         darkTheme = true;
     } else {
         document.body.style.background = `#f0eef6`;
+        document.body.style.color=`hsl(252,30%,10%)`;
         document.getElementById(`logo`).style.color = `black`;
         document.getElementById(`navbar`).style.background = `#ffffff`;
+        document.getElementById(`profile`).style.background = `#ffffff`;
+        document.getElementById(`sidebar`).style.background = `#ffffff`;
+        document.getElementById(`right`).style.background = `#ffffff`;
+        document.getElementById(`searchbar`).style.background = `#f0eef6`;
+        document.getElementById(`searchbar1`).style.background = `#f0eef6`;
+        document.getElementById(`input`).style.background = `#ffffff`;
+        document.getElementById(`popup`).style.background = `#ffffff`;
+        document.getElementById(`feed2`).style.background = `#ffffff`;
+        document.getElementById(`feed3`).style.background = `#ffffff`;
+        document.getElementById(`feed4`).style.background = `#ffffff`;
+        document.getElementById(`feed5`).style.background = `#ffffff`;
+        document.getElementById(`feed6`).style.background = `#ffffff`;
+        document.getElementById(`feed7`).style.background = `#ffffff`;
+        document.getElementById(`feed8`).style.background = `#ffffff`;
+        document.getElementById(`feed9`).style.background = `#ffffff`;
+        document.getElementById(`feed10`).style.background = `#ffffff`;
+        document.getElementById(`feed11`).style.background = `#ffffff`;
+        document.getElementById(`feed12`).style.background = `#ffffff`;
+        document.getElementById(`feed13`).style.background = `#ffffff`;
+        document.getElementById(`feed14`).style.background = `#ffffff`;
+        document.getElementById(`request1`).style.background = `#ffffff`;
+        document.getElementById(`request2`).style.background = `#ffffff`;
+        document.getElementById(`request3`).style.background = `#ffffff`;
+        document.getElementById(`request4`).style.background = `#ffffff`;
+        document.getElementById(`tag1`).style.color = `#1c1d27`;
+        document.getElementById(`tag2`).style.color = `#1c1d27`;
+        document.getElementById(`tag3`).style.color = `#1c1d27`;
+        document.getElementById(`tag4`).style.color = `#1c1d27`;
+        document.getElementById(`tag5`).style.color = `#1c1d27`;
+        document.getElementById(`tag6`).style.color = `#1c1d27`;
+        document.getElementById(`tag7`).style.color = `#1c1d27`;
         darkTheme = false;
     }
 }
@@ -224,6 +289,36 @@ function liked3(){
 }
 function liked4(){
     document.getElementById(`liked4`).style.color=`red`;
+}
+function liked5(){
+    document.getElementById(`liked5`).style.color=`red`;
+}
+function like6(){
+    document.getElementById(`liked6`).style.color=`red`;
+}
+function liked7(){
+    document.getElementById(`liked7`).style.color=`red`;
+}
+function liked8(){
+    document.getElementById(`liked8`).style.color=`red`;
+}
+function liked9(){
+    document.getElementById(`liked9`).style.color=`red`;
+}
+function liked10(){
+    document.getElementById(`liked10`).style.color=`red`;
+}
+function liked11(){
+    document.getElementById(`liked11`).style.color=`red`;
+}
+function liked12(){
+    document.getElementById(`liked12`).style.color=`red`;
+}
+function liked13(){
+    document.getElementById(`liked13`).style.color=`red`;
+}
+function liked14(){
+    document.getElementById(`liked14`).style.color=`red`;
 }
 
 function post(){
