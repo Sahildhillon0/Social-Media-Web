@@ -44,7 +44,7 @@ function signup() {
   } else if (rs_password.value === "") {
     rs_dialogue.innerHTML = 'Password is required.';
   } else {
-    rs_dialogue.innerHTML = `Account Created.`;
+    rs_dialogue.innerHTML = `Account Created. You can go to Sign in section`;
     rs_dialogue.classList.add(`success`);
     
   }

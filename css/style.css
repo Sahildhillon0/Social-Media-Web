@@ -310,13 +310,13 @@ main .container .left .profile{
 }
 
 .middle .stories .story:nth-child(1){
-    background: url("../html/images/bmw.jpg")no-repeat center center/cover;
+    background: url("../html/images/s1.jpg")no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(2){
     background: url("../html/images/bmw.jpg")no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(3){
-    background: url("../html/images/bmw.jpg")no-repeat center center/cover;
+    background: url("../html/images/s2.jpg")no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(4){
     background: url("../html/images/bmw.jpg")no-repeat center center/cover;
