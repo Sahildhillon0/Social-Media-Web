@@ -32,14 +32,14 @@ menuItems.forEach(item => {
         }
         else {
             if(!x){
-                console.log(`he`);
+                // console.log(`he`);
             let popup = document.querySelector(`.notification-popup`);
             popup.style.display = `block`;
             document.querySelector(`#notifications .notification-count`).style.display = `none`;
             x=true;
             }
             else{
-                console.log(`eh`);
+                // console.log(`eh`);
                 let popup = document.getElementById(`popup`);
             popup.style.display = `none`;
             x=false;
@@ -186,58 +186,60 @@ function primary() {
     document.querySelector(`#general`).classList.remove(`active`);
     document.querySelector(`#request`).classList.remove(`active1`);
     document.querySelector(`#primary`).classList.add(`active`);
-    document.getElementById(`msgs`).innerHTML = `<div class="message">
-    <div class="profile-picture">
-        <img src="./images/bmw.jpg" alt="">
+    document.getElementById(`msgs`).innerHTML = `<div id="msgs">
+    <div class="message">
+        <div class="profile-picture">
+            <img src="./images/pfp3.jpg" alt="">
+        </div>
+        <div class="message-body">
+            <h5>Mikey-Kun</h5>
+            <p class="text-bold">Sup! homie</p>
+        </div>
     </div>
-    <div class="message-body">
-        <h5>Mikey-Kun</h5>
-        <p class="text-bold">Sup! homie</p>
+    <div class="message">
+        <div class="profile-picture">
+            <img src="./images/lpost.jpg" alt="">
+        </div>
+        <div class="message-body">
+            <h5>Liza</h5>
+            <p class="text-bold">hi!</p>
+        </div>
     </div>
-</div>
-<div class="message">
-    <div class="profile-picture">
-        <img src="./images/bmw.jpg" alt="">
+    <div class="message">
+        <div class="profile-picture">
+            <img src="./images/pfp1.jpg" alt="">
+        </div>
+        <div class="message-body">
+            <h5>Albert</h5>
+            <p class="text-bold">Will be soon</p>
+        </div>
     </div>
-    <div class="message-body">
-        <h5>Liza</h5>
-        <p class="text-bold">hi!</p>
+    <div class="message">
+        <div class="profile-picture">
+            <img src="./images/sherlock.jpg" alt="">
+        </div>
+        <div class="message-bold">
+            <h5>Sherlock</h5>
+            <p class="text-muted">lmao!</p>
+        </div>
     </div>
-</div>
-<div class="message">
-    <div class="profile-picture">
-        <img src="./images/bmw.jpg" alt="">
+    <div class="message">
+        <div class="profile-picture">
+            <img src="./images/stephen.jpg" alt="">
+        </div>
+        <div class="message-body">
+            <h5>Stephen-Hawkins</h5>
+            <p class="text-bold">You'll handle Island</p>
+        </div>
     </div>
-    <div class="message-body">
-        <h5>Albert</h5>
-        <p class="text-bold">Will be soon</p>
-    </div>
-</div>
-<div class="message">
-    <div class="profile-picture">
-        <img src="./images/bmw.jpg" alt="">
-    </div>
-    <div class="message-bold">
-        <h5>Sherlock</h5>
-        <p class="text-muted">lmao!</p>
-    </div>
-</div>
-<div class="message">
-    <div class="profile-picture">
-        <img src="./images/bmw.jpg" alt="">
-    </div>
-    <div class="message-body">
-        <h5>Stephen-Hawkins</h5>
-        <p class="text-bold">You'll handle Island</p>
-    </div>
-</div>
-<div class="message">
-    <div class="profile-picture">
-        <img src="./images/bmw.jpg" alt="">
-    </div>
-    <div class="message-body">
-        <h5>Shashank</h5>
-        <p class="text-muted">Sup! homie</p>
+    <div class="message">
+        <div class="profile-picture">
+            <img src="./images/pfp1.jpg" alt="">
+        </div>
+        <div class="message-body">
+            <h5>Shashank</h5>
+            <p class="text-muted">Sup! homie</p>
+        </div>
     </div>
 </div>`
 }
